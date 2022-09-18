@@ -8,7 +8,7 @@ import { GiKnifeFork } from 'react-icons/gi'
 //Example chairty json object:
 const charity = {
   "name" : "Make a Wish Foundation",
-  "wallet" : "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+  "wallet" : "0x13E79a4117577420593bc1Af47bd1518014dC151",
   "icon": require("../../assets/makeawish.png"),
   "events" : [
       {
@@ -79,7 +79,7 @@ function CharityInfo() {
           {/* title */}
           <div className="flex flex-row flex-nowrap bg-whte rounded-3xl h-32 content-center">
             <div className="grid w-1/6 pl-3 place-items-center">
-              <img src={charity.icon} className=""/>
+              <img src={charity.icon} className="rounded-full"/>
             </div>
             <div className="grid w-2/3 text-left pt-7 pl-5 h-min">
               <div className="font-black text-xl">
