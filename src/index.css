@@ -92,3 +92,37 @@ input {
 .Login {
   background-color: white;
 }
+
+.buttonEnable{
+  background-color: #0AB5CC;
+  color: #F5F5F5;
+  padding: 5% 15px 5% 15px;
+}
+
+.buttonDisable{
+  border: 3px solid #0AB5CC;
+  color: #0AB5CC;
+  background-color: rgba(0,0,0,0);
+  padding: 5% 15px 5% 15px;
+}
+
+.eventHeader{
+  display: grid;
+  grid-template-columns: 27% 33% 18% 22%;
+  width: 100%;
+}
+
+.griditem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 5px ;
+}
+
+.right{
+  justify-self: end;
+}
+
+/* * {
+  border: solid green 1px;
+} */
