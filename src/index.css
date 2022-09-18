@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://rsms.me/inter/inter.css');
+
 
 @font-face {
   font-family: Inter;
@@ -58,7 +60,16 @@ body {
 h1 {
   font-family: Inter-bold;
   font-size: 10.2 px;
-  opacity: 0.65;
+}
+
+h2 {
+  font-family: Inter-medium;
+  font-size: 8.2 px;
+}
+
+h3 {
+  font-family: Inter-light;
+  font-size: 6.2 px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

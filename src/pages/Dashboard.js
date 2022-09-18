@@ -4,9 +4,11 @@ import CharityCard from '../components/dashboard/CharityCard';
 
 function Dashboard(props) {
     return (
-        <div className="dashboard">
+        <div className="flex flex-row h-screen bg-bg bg-cover">
           <NavigationBar />
-          <CharityCard />
+          <div className='w-full'>
+            <CharityCard />
+          </div>
         </div>
       );
 }
