@@ -80,6 +80,12 @@ code {
   width: 500px;
 }
 
+.menuitem{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}
+
 input {
   height: 35px;
   width: 250px;

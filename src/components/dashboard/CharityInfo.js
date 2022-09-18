@@ -87,7 +87,7 @@ function CharityInfo() {
               </div>
               <div className="flex flex-row place-items-center pt-5">
                   <FaEthereum />
-                  <h4>0x{charity.wallet}</h4>
+                  <h4>{charity.wallet}</h4>
               </div>
             </div>
             <div className="grid w-1/6 place-items-center pr-4">

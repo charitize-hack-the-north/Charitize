@@ -6,7 +6,7 @@ import { SponsorPage } from './pages/SponsorPage';
 function App() {
   return (
     <div className="App">
-      <Login />
+      <SponsorPage />
     </div>
   );
 }
