@@ -79,3 +79,15 @@ code {
 .w-300 {
   width: 500px;
 }
+
+input {
+  height: 35px;
+  width: 250px;
+  padding: 10px;  
+  border: 1px solid #C2C9D1;
+  font-family: Inter;
+}
+
+.Login {
+  background-color: white;
+}
