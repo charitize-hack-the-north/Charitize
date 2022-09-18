@@ -13,28 +13,24 @@ function NavigationBar(props) {
             </div>
         </a>
 
-        <div className="flex flex-col w-full h-1/6 bg-primary">
-            Wallet
-        </div>
+        <div className="h-2/3"></div>
 
-        <div className="h-1/2"></div>
-
-        <div className="flex flex-col w-full h-28 justify-center space-y-3">
-            <div className="flex flex-row w-full pl-4 space-x-2">
+        <div className="flex flex-col w-full h-20 justify-center space-y-1">
+            <div className="flex flex-row w-full pl-4 space-x-3">
                 <IoMdSettings className="h-full" />
                 <h2 className="text-md">Settings</h2>
             </div>
-            <div className="flex flex-row w-ful pl-4 space-x-2">
+            <div className="flex flex-row w-ful pl-4 space-x-3">
                 <IoMdChatbubbles className="h-full"/>
                 <h2 className="text-md">Support</h2>
             </div>
         </div>
 
-        <div className="flex flex-col w-full bg-secondary h-16">
-            Login/Signup
+        <div className="flex flex-col w-full h-1/6 bg-primary">
+            Wallet
         </div>
 
-        <div className="flex flex-row w-full bg-primary h-3 absolute bottom-0"></div>
+        <div className="flex flex-row w-full bg-primary h-3 absolute bottom-0 z-50"></div>
     </div>
   );
 }
