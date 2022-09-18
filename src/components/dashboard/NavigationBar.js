@@ -8,7 +8,7 @@ function NavigationBar(props) {
             <div className="flex flex-row flex-wrap relative m-5 justify-center">
                 <img className="w-8" src={require('../../assets/logo.png')} />
                 <span className="flex flex-1 items-center justify-center">
-                    <h1 className="text-bold text-2xl">Charitize</h1>
+                    <h1 className="text-bold text-2xl titleText">Charitize</h1>
                 </span>
             </div>
         </a>
