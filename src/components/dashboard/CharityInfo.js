@@ -4,11 +4,13 @@ import { AiOutlinePushpin, AiTwotoneCalendar, AiOutlineSecurityScan } from 'reac
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaRoad } from 'react-icons/fa'
 import { GiKnifeFork } from 'react-icons/gi'
+import { useContract } from "wagmi";
+import redeemABI from "../../redeem.json"
 
 //Example chairty json object:
 const charity = {
   "name" : "Make a Wish Foundation",
-  "wallet" : "0x13E79a4117577420593bc1Af47bd1518014dC151",
+  "wallet" : "0xef55c489a19dB40473159D830569a2E0b52d9340",
   "icon": require("../../assets/makeawish.png"),
   "events" : [
       {
@@ -73,6 +75,11 @@ const charity = {
   ]
 }
 function CharityInfo() {
+  const contract = useContract({
+    addressOrName: '0xcDF2335386D980916e449e06879F41f594D3A2AC',
+    contractInterface: redeemABI,
+  })
+  
   return (
     <div className="grid place-items-center h-screen overflow-scroll">
       <div className="flex flex-col space-y-6 w-4/5 pt-10">
@@ -91,7 +98,7 @@ function CharityInfo() {
               </div>
             </div>
             <div className="grid w-1/6 place-items-center pr-4">
-              <button className="rounded-full bg-cyan-400 w-full buttonEnable">
+              <button className="rounded-full bg-cyan-400 w-full buttonEnable" onClick={contract.sendViaCall("0x0603Caa8B61B5EF8ee57FF71E41A2F3E317ce170")}>
                 Redeem
               </button>
             </div>

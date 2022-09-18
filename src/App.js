@@ -2,6 +2,7 @@ import './App.css'
 import { Dashboard } from './pages/Dashboard';
 import { Login } from './pages/Login';
 import { SponsorPage } from './pages/SponsorPage';
+import React, { useEffect, useState } from 'react';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
