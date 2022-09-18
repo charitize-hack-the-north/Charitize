@@ -1,9 +1,15 @@
 import { ReactElement, useEffect, useState } from "react"
 
 import CharityCard from "./CharityCard"
+import { SponsorPage } from "../../pages/SponsorPage";
 
 const CharityList = () => {
-    return (
+    const [salArmy, setSalArmy] = useState();
+    return ( salArmy ? (
+        <SponsorPage />  
+    )
+        :
+    (
         <div className="flex flex-col items-center w-full h-full space-y-6 overflow-auto">
             <form className="mt-12">   
                 <label for="default-search" class="text-sm font-medium text-gray-900 sr-only">Search</label>
@@ -22,8 +28,8 @@ const CharityList = () => {
                     <CharityCard name="United Way" photo="https://pbs.twimg.com/profile_images/1247622311936765952/pf9ffcEj_400x400.png" />
                 </div>
                 <div className="flex flex-row w-full justify-center space-x-8">
-                    <CharityCard name="Make a Wish" photo="https://mma.prnewswire.com/media/444000/Make_A_Wish_Logo.jpg?p=twitter" />
-                    <CharityCard name="Salvation Army" photo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/1200px-The_Salvation_Army.svg.png" />
+                    <a onClick={() => setSalArmy(true)}><CharityCard name="Make a Wish" photo="https://mma.prnewswire.com/media/444000/Make_A_Wish_Logo.jpg?p=twitter" /></a>
+                    <CharityCard name="Salvation Army" photo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/1200px-The_Salvation_Army.svg.png"/>
                     <CharityCard name="UNICEF Canada" photo="https://images.squarespace-cdn.com/content/v1/556deb8ee4b08a534b8360e7/1644566784646-37W07KXT6I6X0L0NECII/UNICEF-logo.jpg?format=500w" />
                 </div>
                 <div className="flex flex-row w-full justify-center space-x-8">
@@ -33,6 +39,7 @@ const CharityList = () => {
                 </div>
             <div className="h-20 pb-12"></div>
         </div>
+    )
     )
 }
 

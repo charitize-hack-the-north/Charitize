@@ -18,11 +18,9 @@ function Login() {
             const donatorEmail = snapshot.val().Donator.Email;
 
             if (email == charityEmail) {
-                alert("Is a charity email!");
                 setLoggedIn(true);
             }
 
-            alert(email.toString() + " == " + charityEmail);
         });
     };
 

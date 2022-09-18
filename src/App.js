@@ -43,7 +43,7 @@ function App() {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <div className="App">
-          <SponsorPage />
+          <Login />
         </div>
       </RainbowKitProvider>
     </WagmiConfig>
