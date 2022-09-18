@@ -17,11 +17,11 @@ function NavigationBar(props) {
 
         <div className="flex flex-col w-full h-28 justify-center space-y-4">
             <div className="grid w-full menuitem">
-                <IoMdSettings className="h-full w-full" />
+                <IoMdSettings className="h-full justify-self-center" />
                 <h2 className="text-md text-left pl-1">Settings</h2>
             </div>
             <div className="grid w-full menuitem">
-                <IoMdChatbubbles className="h-full w-full"/>
+                <IoMdChatbubbles className="h-full justify-self-center"/>
                 <h2 className="text-md text-left pl-1">Support</h2>
             </div>
         </div>

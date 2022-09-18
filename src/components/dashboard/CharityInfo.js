@@ -8,7 +8,7 @@ import { GiKnifeFork } from 'react-icons/gi'
 //Example chairty json object:
 const charity = {
   "name" : "Make a Wish Foundation",
-  "wallet" : "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "wallet" : "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
   "icon": require("../../assets/makeawish.png"),
   "events" : [
       {
@@ -64,7 +64,7 @@ const charity = {
       {
           "location" : "Narnia",
           "time" : "May 10 5pm - 10pm",
-          "volunteers" : "5/5",
+          "volunteers" : "5/5 :)",
           "extras" : [],
           "desc" : "Vivamus ut tincidunt turpis. Curabitur malesuada, nulla non faucibus sollicitudin, erat magna finibus leo, sit amet tincidunt sapien diam et leo. Nullam a augue non nibh porta egestas a in sem. Donec luctus est tincidunt nulla congue, non tincidunt ex auctor. Mauris ligula lectus, laoreet sed feugiat ac, efficitur at arcu. Ut porttitor enim at mattis ornare. In hac habitasse platea dictumst. Sed laoreet consectetur quam, interdum semper nisi luctus eu. Curabitur vel sollicitudin purus.",
           "isVolunteer": false,
