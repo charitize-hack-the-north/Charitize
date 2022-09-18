@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { IoMdChatbubbles, IoMdSettings } from 'react-icons/io'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 
 function NavigationBar(props) {
   return (
@@ -26,8 +28,10 @@ function NavigationBar(props) {
             </div>
         </div>
 
-        <div className="flex flex-col w-full h-1/6 bg-primary">
-            Wallet
+        <div className="flex flex-col h-1/6 p-5 relative">
+            <div className="absolute bottom-10">
+                <ConnectButton chainStatus="none" showBalance={false} />
+            </div>
         </div>
 
         <div className="flex flex-row w-full bg-primary h-3 absolute bottom-0 z-50"></div>
