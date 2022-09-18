@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 
 @font-face {
@@ -51,8 +51,7 @@
 
 body {
   margin: 0;
-  font-family: 'Josefin Sans';
-  font-weight: 500;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E2EEEF;
@@ -64,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Josefin Sans';
+  font-family: Inter-medium;
   font-size: 8.2 px;
 }
 
@@ -81,14 +80,36 @@ code {
   width: 500px;
 }
 
-input {
-  height: 35px;
-  width: 250px;
-  padding: 10px;  
-  border: 1px solid #C2C9D1;
-  font-family: Inter;
+/* * {
+  border: solid green 1px;
+} */
+
+.buttonEnable{
+  background-color: #0AB5CC;
+  color: #F5F5F5;
+  padding: 5% 15px 5% 15px;
 }
 
-.Login {
-  background-color: white;
+.buttonDisable{
+  border: 3px solid #0AB5CC;
+  color: #0AB5CC;
+  background-color: rgba(0,0,0,0);
+  padding: 5% 15px 5% 15px;
+}
+
+.eventHeader{
+  display: grid;
+  grid-template-columns: 27% 33% 18% 22%;
+  width: 100%;
+}
+
+.griditem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 5px ;
+}
+
+.right{
+  justify-self: end;
 }
