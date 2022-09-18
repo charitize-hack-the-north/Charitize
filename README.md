@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Imagine this: you are at a grocery store, doing your weekly groceries when you come across another donation poster. This week, it is for hungry children. You reflect on growing up in a lower income household, where putting food on the table was more of a luxury than a necessity. After years of hard work, you finally break out of poverty, and you no longer have to worry about affording bare necessities. When the cashier finishes scanning all your items, she asks you if you would like to donate to charity. Remembering the days you went to sleep hungry, you donate $25 and leave the store hopeful...
 
-## Available Scripts
+But does all the money you donate to charities actually end up going towards the cause?
 
-In the project directory, you can run:
+Unfortunately, it is not uncommon for donated money to end up in the pockets of corrupted charity officials who use the money for personal gain. According to the Tampa Bay Times, "for 50 U.S. charities, less than four percent of their funds were used for charity-related activities.  The remaining 96 percent went towards the paychecks of charity founders, operators, and solicitors."
 
-### `npm start`
+Constantly hearing about ongoing and unresolved social issues inspired my team to create Charitize, a web application that allows transparency between charities and donors.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What it does
+Charitize is an easy, three way platform that allows charities to maintain their integrity and relationship with stakeholders, helps donors ensure their money is going towards the right cause, and is an easy navigation site for driven individuals to browse volunteering opportunities. As mentioned, there are three types of users: charity organizations, donors and volunteers. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Charities: 
+Charity organizations can create their own pages, made for a specific cause. Each charity has a corresponding governance token. They also do not have access to the funds / treasury whatsoever. Each charity page includes a section about their mission, list of upcoming volunteer opportunities, current treasury meter, and a redeem page for volunteers.
 
-### `npm test`
+Donors:
+Donors can choose to donate for charities that are close to them. They donate to a charity’s treasury, which is inaccessible to everyone, except the volunteers, when they redeem their tokens. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Volunteers:
+Volunteers can volunteer for different charities; once they are approved, they can put in volunteer hours, which are approved by admins, or other volunteers - based off of the charity settings. These hours can be redeemed for a monetary value, once the charity’s treasury is opened.
 
-### `npm run build`
+## How we built it
+After deciding on our idea, we used Figma for the prototyping. Then we created the frontend using HTML, CSS, JavaScript, and React. To connect it to the backend, we used Firebase.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges we ran into
+Our main challenge was coding the frontend. Although we had a really good design on Figma, it was quite challenging and time consuming to translate that into code. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Accomplishments that we're proud of
+Although it was also one of our biggest challenges, we are proud of our UX/UI design. We spent a lot of time on it and we think that in the end, it looks great!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What we learned
+Many of our team members picked up a new language and/or framework from this hackathon. We were each able to leverage our own strengths, and extend our current skills further by picking up a new tool!
 
-### `npm run eject`
+## What's next for Charitize
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
